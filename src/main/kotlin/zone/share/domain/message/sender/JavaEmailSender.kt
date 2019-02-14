@@ -1,6 +1,7 @@
 package zone.share.domain.message.sender
 
-import zone.share.domain.message.config.JavaEmailConfig
+import zone.share.domain.message.sender.config.AbstractSenderConfig
+import zone.share.domain.message.sender.config.JavaEmailConfig
 import java.util.*
 import javax.mail.Authenticator
 import javax.mail.PasswordAuthentication
@@ -24,7 +25,7 @@ class JavaEmailSender : ISender {
 
     constructor()
 
-    override fun init(config: ISender.Config): Boolean {
+    override fun init(config: AbstractSenderConfig): Boolean {
         if (config !is JavaEmailConfig) return false
         return this.init(config = config)
     }

@@ -1,6 +1,4 @@
-package zone.share.domain.message.config
-
-import zone.share.domain.message.sender.ISender
+package zone.share.domain.message.sender.config
 
 /**
  * JavaEmailConfig
@@ -11,4 +9,4 @@ data class JavaEmailConfig(
         val username: String,
         val password: String,
         val host: String,
-        val port: String) : ISender.Config()
+        val port: String) : AbstractSenderConfig()

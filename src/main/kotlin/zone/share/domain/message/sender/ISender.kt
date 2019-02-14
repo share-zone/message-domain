@@ -1,5 +1,7 @@
 package zone.share.domain.message.sender
 
+import zone.share.domain.message.sender.config.AbstractSenderConfig
+
 /**
  * ISender
  * @author Iamee
@@ -7,10 +9,8 @@ package zone.share.domain.message.sender
  */
 interface ISender {
 
-    fun init(config: Config): Boolean
+    fun init(config: AbstractSenderConfig): Boolean
 
     fun send(to: String, title: String, content: String): Boolean
-
-    abstract class Config
 
 }
