@@ -1,0 +1,33 @@
+{
+  "name": "message-domain",
+  "version": "1.0.0",
+  "description": "message-domain",
+  "main": "index.js",
+  "scripts": {
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/share-zone/message-domain.git"
+  },
+  "keywords": [
+    "share",
+    "zone",
+    "message",
+    "domain"
+  ],
+  "author": "e-sen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/share-zone/message-domain/issues"
+  },
+  "homepage": "https://github.com/share-zone/message-domain#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  }
+}
